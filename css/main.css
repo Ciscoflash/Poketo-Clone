@@ -1,0 +1,1520 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+html{
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+    height: auto;
+    background-color: #f9f9f9;
+}
+nav .innerNav{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin: auto;
+    grid-gap: 10px;
+}
+nav .innerNav .leftItem{
+    padding: 15px;
+}
+nav .innerNav .leftItem img{
+    width: 90%;
+    object-fit: cover;
+}
+nav .innerNav .middleItem{
+  width: 110%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  gap: 8px;
+}
+nav .innerNav .middleItem a{
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(122, 121, 121);
+}
+nav .innerNav .rightItem{
+  width: 40%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 15px;
+}
+nav .innerNav .rightItem img{
+  width: 30px;
+}
+nav .hr{
+    border-bottom: 1px solid #cfcfcf;
+}
+.secondNav{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+.secondNav .innerSecond{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    padding: 50px ;
+}
+.secondNav .innerSecond a{
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(122, 121, 121);
+    padding: 10px;
+    font-weight: 600;
+}
+/* THE SLIDER STARTS HERE */
+#container{
+    width: 100%;
+    height: 510px;
+}
+#container .skippr{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+#container .skippr .firstSlider{
+    width: 100vw;
+    height: 85vh;
+    background-image: url("../images/website-banner_1920x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+    /* padding: 10px; */
+}
+
+#container .skippr .secondSlider{
+    width: 100%;
+    height: 85vh;
+    background-image: url("../images/secondBanner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+    
+}
+/* #container .skippr .secondSlider .secondOpacity{
+    
+} */
+#container .skippr .firstSlider{
+    text-align: center;
+    color: white;
+}
+#container .skippr .firstSlider p{
+   font-size: 1.2rem;
+   padding-top: 30px;
+   color: #f9f9f9;
+}
+#container .skippr .firstSlider .second{
+   font-size: 1.3rem;
+   padding-top: 60px;
+   color: #f9f9f9;
+   font-style: italic;
+   margin-bottom: 30px;
+}
+#container .skippr .firstSlider .btnShop{
+    border: 1px solid white;
+    padding: 15px 25px;
+    color: black;
+    background-color: white;
+}
+#container .skippr .firstSlider h1{
+   font-size: 4rem;
+    margin-top: 60px;
+}
+#container .skippr .firstSlider a{
+    text-decoration: none;
+    color: white;
+}
+#container .skippr .secondSlider{
+    text-align: center;
+    color: white;
+}
+#container .skippr .secondSlider p{
+   font-size: 1.2rem;
+   padding-top: 30px;
+   color: #f9f9f9;
+}
+#container .skippr .secondSlider .second{
+   font-size: 1.3rem;
+   padding-top: 60px;
+   color: #f9f9f9;
+   font-style: italic;
+   margin-bottom: 30px;
+}
+#container .skippr .secondSlider .btnShop{
+    border: 1px solid white;
+    padding: 15px 25px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}
+#container .skippr .secondSlider h1{
+   font-size: 4rem;
+    margin-top: 60px;
+}
+
+/* THE THIRD SECTION STARTS HERE */
+.column3{
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    overflow: hidden;
+    z-index: 2;
+    margin-bottom: 200px;
+}
+.column3 .innerColumn{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1, minmax(600px, auto));
+    
+}
+.column3 .innerColumn .firstRow{
+    background-image: url("../images/Fall-2021-Stationery-NL-02_1920x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: all .5s ease-in-out;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.column3 .innerColumn .firstRow h1{
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  padding-top: 40%;
+}
+.column3 .innerColumn .firstRow .column3Opacity:hover{
+    width: 100%;
+    height: 600px;
+    background: rgb(0, 0, 0, .72);
+ }
+
+.column3 .innerColumn .secondRow{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, minmax(300px, auto));
+    background-color: red;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.column3 .innerColumn .secondRow .topColumn{
+    width: 100%;
+    background-image: url("../images/Flora-Salad-Plate-Flora-Towel-1x1_1920x_46f7dcf9-0933-4dc7-b6d2-382f5c6aa426_1920x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: all .5s ease-in-out;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.column3 .innerColumn .secondRow .topColumn .column3Opacity2:hover{
+    width: 100%;
+    height: 300px;
+    background: rgb(0, 0, 0, .72);
+}
+
+.column3 .innerColumn .secondRow h1{
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+    padding-top: 20%;
+  }
+.column3 .innerColumn .secondRow .bottomColumn{
+    width: 100%;
+    background-image: url("../images/Creative-Spaces-Lifestyle-4_1920x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: all .5s ease-in-out;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.column3 .innerColumn .secondRow .bottomColumn .column3Opacity3:hover{
+    width: 100%;
+    height: 300px;
+    background: rgb(0, 0, 0, .72);
+}
+.Column4{
+    width: 100%;
+    height: 600px;
+    background-color: #f9f9f9;
+    margin-top: 580px;
+}
+.Column4 .innerCol{
+    width: 98%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, minmax(300px, auto));
+}
+.Column4 .innerCol img{
+  width: 70%;
+  object-fit: cover;
+  margin-left: 40px;
+}
+.Column4 .innerCol .first p{
+    text-align: center;
+}
+.Column4 .innerCol .second p{
+    text-align: center;
+}
+.Column4 .innerCol .third p{
+    text-align: center;
+}
+.Column4 .innerCol .fourth p{
+    text-align: center;
+}
+.Column4 .innerCol .fifth p{
+    text-align: center;
+}
+.Column4 .innerCol .sixth p{
+    text-align: center;
+}
+.Column4 .innerCol .seventh p{
+    text-align: center;
+}
+.Column4 .innerCol .eight p{
+    text-align: center;
+}
+
+/* COLUMN 4 OPACITY */
+.Column4 .innerCol .first .firstImg{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.Column4 .innerCol .first .firstOpacity:hover{
+    width: 80%;
+    background-image: url("../images/Spectrum-Wall-Planner-Lifestyle_480x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 210px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    margin-top: 10px;
+}
+.Column4 .innerCol .second .secondImg{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.Column4 .innerCol .second .secondOpacity:hover{
+    width: 80%;
+    background-image: url("../images/New-Stationery-lifestyle_5c00770b-2428-4f2a-8392-95fade20f28b_480x.jpg");
+    height: 210px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    margin-top: 10px;
+}
+.Column4 .innerCol .third .thirdImg{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.Column4 .innerCol .third .thirdOpacity:hover{
+    width: 80%;
+    background-image: url("../images/Self-Planner-NL-04_480x.jpg");
+    height: 210px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    margin-top: 10px;
+}
+.Column4 .innerCol .fourth .fourthImg{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.Column4 .innerCol .fourth .fourthOpacity:hover{
+    width: 80%;
+    background-image: url("../images/Creativity-Journal-NL-01_480x.jpg");
+    height: 210px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    margin-top: 10px;
+}
+.Column4 .innerCol .fifth .fifthImg{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.Column4 .innerCol .fifth .fifthOpacity:hover{
+    width: 80%;
+    background-image: url("../images/Dome-Wallets-Group-1x1_183c0a8e-613b-436b-beb0-708851058620_480x.jpg");
+    height: 210px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    margin-top: 10px;
+}
+.Column4 .innerCol .sixth .sixthImg{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.Column4 .innerCol .sixth .sixthOpacity:hover{
+    width: 80%;
+    background-image: url("../images/Dome-Wallet-Yellow-Open_480x.jpg");
+    height: 210px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    margin-top: 10px;
+}
+.Column4 .innerCol .seventh .seventhImg{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.Column4 .innerCol .seventh .seventhOpacity:hover{
+    width: 80%;
+    background-image: url("../images/Dome-Wallet-Hand-Model-Red_480x.jpg");
+    height: 210px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    margin-top: 10px;
+}
+.Column4 .innerCol .eight .eightImg{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.Column4 .innerCol .eight .eightOpacity:hover{
+    width: 80%;
+    background-image: url("../images/Dome-Wallet-Navy-Open_480x.jpg");
+    height: 210px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    margin-top: 10px;
+}
+.Column4 .innerCol a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    border: 1px solid black;
+}
+.Column4 .innerCol .first .firstImg a{
+    text-decoration: none;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 30%;
+}
+.Column4 .innerCol .first .firstImg a:hover{
+    background-color: white;
+}
+
+
+.Column4 .innerCol .second .secondImg a{
+    text-decoration: none;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 30%;
+}
+.Column4 .innerCol .second .secondImg a:hover{
+    background-color: white;
+}
+.Column4 .innerCol .third .thirdImg a{
+    text-decoration: none;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 30%;
+}
+.Column4 .innerCol .third .thirdImg a:hover{
+    background-color: white;
+}
+.Column4 .innerCol .fourth .fourthImg a{
+    text-decoration: none;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 30%;
+}
+.Column4 .innerCol .fourth .fourthImg a:hover{
+    background-color: white;
+}
+.Column4 .innerCol .fifth .fifthImg a{
+    text-decoration: none;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 30%;
+}
+.Column4 .innerCol .fifth .fifthImg a:hover{
+    background-color: white;
+}
+.Column4 .innerCol .sixth .sixthImg a{
+    text-decoration: none;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 30%;
+}
+.Column4 .innerCol .sixth .sixthImg a:hover{
+    background-color: white;
+}
+.Column4 .innerCol .seventh .seventhImg a{
+    text-decoration: none;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 30%;
+}
+.Column4 .innerCol .seventh .seventhImg a:hover{
+    background-color: white;
+}
+.Column4 .innerCol .eight .eightImg a{
+    text-decoration: none;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 30%;
+}
+.Column4 .innerCol .eight .eightImg a:hover{
+    background-color: white;
+}
+
+
+.column5{
+        width: 100%;
+        height: 600px;
+        background-color: #f9f9f9;
+        /* margin-top: 580px; */
+        position: absolute;
+         /* top: 0; */
+        left: 0;
+        overflow: hidden;
+        z-index: 2;
+}
+.column5 .innerColumn5{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.column5 .innerColumn5 .leftColumn5{
+    width: 100%;
+    background-image: url("../images/poketo-blog_1200x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.column5 .innerColumn5 .leftColumn5 h1{
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    padding-top: 40%;
+}
+.column5 .innerColumn5 .leftColumn5 a{
+    font-size: 1.3rem;
+    color: #064c19;;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    width: 25%;
+    background-color: white;
+    font-weight: 600;
+    padding: 15px 25px;
+    margin: auto;
+    margin-top: 10%;
+}
+.column5 .innerColumn5 .leftColumn5 .readMore:hover{
+    background-color: rgba(39, 39, 218, 0.87);
+    border: none;
+}
+
+.column5 .innerColumn5 .rightColumn5{
+    width: 100%;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, minmax(300px, auto));
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.column5 .innerColumn5 .rightColumn5 .topColumn5{
+    width: 100%;
+    background-image: url("../images/footer1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: all .5s ease-in-out;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.column5 .innerColumn5 .rightColumn5 .topColumn5:hover img{
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+.column5 .innerColumn5 .rightColumn5 .topColumn5 .topColumn5Opacity{
+   width: 100%;
+   height: 300px;
+   background-color: rgb(0, 0, 0, .72);
+   padding-top: 70px;
+   position: relative;
+   top: 0;
+   left: 0;
+   overflow: hidden;
+}
+.column5 .innerColumn5 .rightColumn5 .topColumn5 a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+.column5 .innerColumn5 .rightColumn5 .topColumn5 p{
+    color: white;
+    font-weight: 600;
+    margin-left: 47px;
+    padding-top: 30px;
+    font-size: 15px;
+}
+.column5 .innerColumn5 .rightColumn5 .topColumn5 .topColumn5Opacity .dash1{
+    height: 6px;
+    width: 10%;
+    background-color: white;
+    margin: 40px;
+    margin-left: 50px;
+}
+.column5 .innerColumn5 .rightColumn5 .bottomColumn5{
+    width: 100%;
+    background-image: url("../images/footer2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: all .5s ease-in-out;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.column5 .innerColumn5 .rightColumn5 .bottomColumn5 .bottomColumn5Opacity{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(0, 0, 0, .72);
+    padding-top: 70px;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+ }
+ .column5 .innerColumn5 .rightColumn5 .bottomColumn5 .bottomColumn5Opacity a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+.column5 .innerColumn5 .rightColumn5 .bottomColumn5 .bottomColumn5Opacity p{
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    margin-left: 95px;
+    margin-top: 40px;
+}
+.column5 .innerColumn5 .rightColumn5 .bottomColumn5 .bottomColumn5Opacity .dash2{
+    height: 6px;
+    width: 10%;
+    background-color: white;
+    margin: 40px;
+    margin-left: 95px;
+}
+.column6{
+    width: 100%;
+        height: 900px;
+        background-color: white;
+         margin-top: 600px;
+}
+.column6 .innerColumn6{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1, minmax(900px, auto));
+    grid-gap: 1px;
+}
+.column6 .innerColumn6 .leftColumn6{
+    width: 100%;
+    background-color:rgb(92, 92, 92) ;
+}
+.column6 .innerColumn6 .leftColumn6 .leftContent{
+   width: 70%;
+   margin: auto;
+}
+.column6 .innerColumn6 .leftColumn6 .leftContent .firstDiv h3{
+  color: #acabab;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 30%;
+  margin-bottom: 10%;
+}
+.column6 .innerColumn6 .leftColumn6 .leftContent .firstDiv p{
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10%;
+}
+.column6 .innerColumn6 .leftColumn6 .leftContent .firstDiv input{
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10%;
+  padding: 13px 45px;
+  background-color: transparent;
+  border: 1px solid rgb(206, 204, 204);
+}
+.column6 .innerColumn6 .leftColumn6 .leftContent .firstDiv input::placeholder{
+  color: rgb(206, 204, 204);
+  border: none;
+}
+.column6 .innerColumn6 .leftColumn6 .leftContent .firstDiv button{
+ padding: 12px 20px;
+ background: #acabab;
+ border: none;
+ font-weight: 600;
+ color: white;
+}
+.column6 .innerColumn6 .leftColumn6 .leftContent .secondDiv .links img{
+ height: 40px;
+}
+.column6 .innerColumn6 .leftColumn6 .leftContent .secondDiv .links{
+ width: 45%;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ margin-bottom: 10%;
+}
+.column6 .innerColumn6 .leftColumn6 .leftContent .secondDiv p{
+    margin-bottom: 40%;
+    font-size: 15px;
+    font-weight: 600;
+    color: #d4d3d3;
+}
+.column6 .innerColumn6 .leftColumn6 .leftContent .secondDiv h3{
+    color: #acabab;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30%;
+    margin-bottom: 8%;
+}
+.column6 .innerColumn6 .leftColumn6 .leftContent p{
+   font-size: 15px;
+   font-weight: 600;
+   color: #d4d3d3;
+   margin-bottom: 80px;
+}
+.column6 .innerColumn6 .leftColumn6 .leftContent .footer{
+   font-size: 15px;
+   font-weight: 600;
+   color: #d4d3d3;
+   margin-bottom: 80px;
+   text-decoration: none;
+}
+
+.column6 .innerColumn6 .rightColumn6{
+    background-color:rgb(92, 92, 92) ;
+    width: 100%;
+}
+.column6 .innerColumn6 .rightColumn6 .rightColumn6Content{
+    width: 70%;
+    margin: auto;
+ }
+ .column6 .innerColumn6 .rightColumn6 .rightColumn6Content .firstDiv h3{
+    color: #acabab;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 25%;
+    margin-bottom: 10%;
+  }
+  .column6 .innerColumn6 .rightColumn6 .rightColumn6Content .firstDiv p{
+    color: #d4d3d3;
+    font-size: 16px;
+    margin-bottom: 10%;
+    font-weight: 600;
+  }
+  .column6 .innerColumn6 .rightColumn6 .rightColumn6Content .firstDiv h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 7%;
+  }
+  .column6 .innerColumn6 .rightColumn6 .rightColumn6Content .secondDiv h3{
+    color: #acabab;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30%;
+    margin-bottom: 8%;
+}
+.column6 .innerColumn6 .rightColumn6 .rightColumn6Content .secondDiv .links{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.column6 .innerColumn6 .rightColumn6 .rightColumn6Content .secondDiv .links a{
+   text-decoration: none;
+   color: white;
+   font-weight: 500;
+   font-size: 14px;
+}
+.column6 .innerColumn6 .rightColumn6 .rightColumn6Content .secondDiv .links ul{
+  list-style: none;
+}
+.column6 .innerColumn6 .rightColumn6 .rightColumn6Content .secondDiv .links ul li{
+  padding-bottom: 15px;
+}
+
+/* SHOP CSS STARTS HERE */
+.shopBanner{
+    width: 100%;
+    background-color: #1990c6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 15vw;
+    min-height: 9rem;
+    max-height: 25rem
+}
+.shopBanner h1{
+    font-size: 45px;
+    text-align: center;
+    color: white;
+    padding-top: 5%;
+}
+.selectList{
+    width: 100%;
+    height: 70px;
+}
+.selectList .innerSelect{
+   width: 97%;
+   display: flex;
+   justify-content: flex-end;
+   margin: auto;
+    margin-top: 10px;
+    gap: 10px;
+}
+.selectList .innerSelect select{
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #6c6c6c;
+}
+
+.shop1{
+    width: 100%;
+    height: auto;
+    background-color: #f9f9f9;
+    /* margin-top: 580px; */
+}
+.shop1 .innerCol{
+    width: 98%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(1, minmax(300px, auto));
+}
+.shop1 .innerCol img{
+  width: 70%;
+  object-fit: cover;
+  margin-left: 40px;
+}
+.shop1 .innerCol .first p{
+    text-align: center;
+}
+.shop1 .innerCol .second p{
+    text-align: center;
+}
+.shop1 .innerCol .third p{
+    text-align: center;
+}
+.shop1 .innerCol .fourth p{
+    text-align: center;
+}
+.shop1 .innerCol .first .firstImg{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.shop1 .innerCol .first .firstOpacity:hover{
+    width: 80%;
+    background-image: url("../images/Spectrum-Wall-Planner-Lifestyle_480x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 210px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    margin-top: 10px;
+}
+.shop1 .innerCol .second .secondImg{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.shop1 .innerCol .second .secondOpacity:hover{
+    width: 80%;
+    background-image: url("../images/New-Stationery-lifestyle_5c00770b-2428-4f2a-8392-95fade20f28b_480x.jpg");
+    height: 210px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    margin-top: 10px;
+}
+.shop1 .innerCol .third .thirdImg{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.shop1 .innerCol .third .thirdOpacity:hover{
+    width: 80%;
+    background-image: url("../images/Self-Planner-NL-04_480x.jpg");
+    height: 210px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    margin-top: 10px;
+}
+.shop1 .innerCol .fourth .fourthImg{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.shop1 .innerCol .fourth .fourthOpacity:hover{
+    width: 80%;
+    background-image: url("../images/Creativity-Journal-NL-01_480x.jpg");
+    height: 210px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    margin-top: 10px;
+}
+.shop1 .innerCol a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    border: 1px solid black;
+    padding: 10px 15px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 30%;
+}
+.shop1 .innerCol a:hover{
+    background-color: white;
+}
+.foot{
+    width: 100%;
+        height: 900px;
+        background-color: white;
+}
+.foot .innerColumn6{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1, minmax(900px, auto));
+    grid-gap: 1px;
+}
+.foot .innerColumn6 .leftColumn6{
+    width: 100%;
+    background-color:rgb(92, 92, 92) ;
+}
+.foot .innerColumn6 .leftColumn6 .leftContent{
+   width: 70%;
+   margin: auto;
+}
+.foot .innerColumn6 .leftColumn6 .leftContent .firstDiv h3{
+  color: #acabab;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 30%;
+  margin-bottom: 10%;
+}
+.foot .innerColumn6 .leftColumn6 .leftContent .firstDiv p{
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10%;
+}
+.foot .innerColumn6 .leftColumn6 .leftContent .firstDiv input{
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10%;
+  padding: 13px 45px;
+  background-color: transparent;
+  border: 1px solid rgb(206, 204, 204);
+}
+.foot .innerColumn6 .leftColumn6 .leftContent .firstDiv input::placeholder{
+  color: rgb(206, 204, 204);
+  border: none;
+}
+.foot .innerColumn6 .leftColumn6 .leftContent .firstDiv button{
+ padding: 12px 20px;
+ background: #acabab;
+ border: none;
+ font-weight: 600;
+ color: white;
+}
+.foot .innerColumn6 .leftColumn6 .leftContent .secondDiv .links img{
+ height: 40px;
+}
+.foot .innerColumn6 .leftColumn6 .leftContent .secondDiv .links{
+ width: 45%;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ margin-bottom: 10%;
+}
+.foot .innerColumn6 .leftColumn6 .leftContent .secondDiv p{
+    margin-bottom: 40%;
+    font-size: 15px;
+    font-weight: 600;
+    color: #d4d3d3;
+}
+.foot .innerColumn6 .leftColumn6 .leftContent .secondDiv h3{
+    color: #acabab;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30%;
+    margin-bottom: 8%;
+}
+.foot .innerColumn6 .leftColumn6 .leftContent p{
+   font-size: 15px;
+   font-weight: 600;
+   color: #d4d3d3;
+   margin-bottom: 80px;
+}
+.foot .innerColumn6 .leftColumn6 .leftContent .footer{
+   font-size: 15px;
+   font-weight: 600;
+   color: #d4d3d3;
+   margin-bottom: 80px;
+   text-decoration: none;
+}
+
+.foot .innerColumn6 .rightColumn6{
+    background-color:rgb(92, 92, 92) ;
+    width: 100%;
+}
+.foot .innerColumn6 .rightColumn6 .rightColumn6Content{
+    width: 70%;
+    margin: auto;
+ }
+ .foot .innerColumn6 .rightColumn6 .rightColumn6Content .firstDiv h3{
+    color: #acabab;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 25%;
+    margin-bottom: 10%;
+  }
+  .foot .innerColumn6 .rightColumn6 .rightColumn6Content .firstDiv p{
+    color: #d4d3d3;
+    font-size: 16px;
+    margin-bottom: 10%;
+    font-weight: 600;
+  }
+  .foot .innerColumn6 .rightColumn6 .rightColumn6Content .firstDiv h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 7%;
+  }
+  .foot .innerColumn6 .rightColumn6 .rightColumn6Content .secondDiv h3{
+    color: #acabab;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30%;
+    margin-bottom: 8%;
+}
+.foot .innerColumn6 .rightColumn6 .rightColumn6Content .secondDiv .links{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.foot .innerColumn6 .rightColumn6 .rightColumn6Content .secondDiv .links a{
+   text-decoration: none;
+   color: white;
+   font-weight: 500;
+   font-size: 14px;
+}
+.foot .innerColumn6 .rightColumn6 .rightColumn6Content .secondDiv .links ul{
+  list-style: none;
+}
+.foot .innerColumn6 .rightColumn6 .rightColumn6Content .secondDiv .links ul li{
+  padding-bottom: 15px;
+}
+
+/* THE PRODUCT DESIGN STARTS HERE */
+.productPage{
+    width: 100%;
+    height: 252vh;
+    /* background-color: #dcdcdcdc; */
+    background: #dcdcdcd9;
+    position: absolute;
+    left: 0;
+    z-index: 100;
+}
+.productPage .innerProduct{
+    width: 70%;
+    height: 200px;
+    background-color: white;
+    margin: auto;
+    position: sticky;
+    z-index: 100;
+    top: 60px;
+    
+}
+.productPage .innerProduct .mainProduct{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1, minmax(200px, auto));
+}
+.productPage .innerProduct .mainProduct .leftProduct{
+    width: 100%;
+    background-color: #f3f3f3;
+}
+.productPage .innerProduct .mainProduct .leftProduct .parentCircle{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    margin: auto;
+    margin-bottom: 30px;
+}
+.productPage .innerProduct .mainProduct .leftProduct .circle{
+    width: 11px;
+    background-color: transparent;
+    border-radius: 50%;
+    height: 10px;
+    border: 1px solid black;
+}
+.productPage .innerProduct .mainProduct .rightProduct{
+    width: 100%;
+    background-color: white;
+}
+.productPage .innerProduct .mainProduct .rightProduct .productTop img{
+    width: 20px;
+    height: 20px;
+}
+.productPage .innerProduct .mainProduct .rightProduct .productTop{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 15px;
+}
+.productPage .innerProduct .mainProduct .rightProduct .productTop h1{
+    font-size: 20px;
+    color: #acabab;
+    margin-bottom: 5%;
+}
+.productPage .innerProduct .mainProduct .rightProduct .P_prize{
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+    margin-left: 40px;
+}
+.productPage .innerProduct .mainProduct .rightProduct .productDown{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 10%;
+    margin-left: 40px;
+    margin-bottom: 10%;
+}
+.productPage .innerProduct .mainProduct .rightProduct .productDown .P_quantity{
+    border: 1px solid black;
+    width: 80%;
+    font-size: 14px;
+    padding: 15px 20px;
+    text-align: center;
+    font-weight: 600;
+    background-color: #e7e7e7;
+    border: none;
+}
+.productPage .innerProduct .mainProduct .rightProduct .productDown .P_quantity::placeholder{
+   color: black;
+}
+.productPage .innerProduct .mainProduct .rightProduct .productDown .btnAddCart{
+    border: 1px solid black;
+    width: 100%;
+    font-size: 18px;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #565656;
+    color: white;
+}
+.productPage .innerProduct .mainProduct .rightProduct .P_description{
+    font-size: 14px;
+    padding: 20px;
+    line-height: 25px;
+}
+
+/* THIS IS FOR THE LOGIN */
+.column6Login{
+    width: 100%;
+        height: 900px;
+        background-color: white;
+         /* margin-top: 600px;column6Login */
+}
+.column6Login .innerColumn6{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1, minmax(900px, auto));
+    grid-gap: 1px;
+}
+.column6Login .innerColumn6 .leftColumn6{
+    width: 100%;
+    background-color:rgb(92, 92, 92) ;
+}
+.column6Login .innerColumn6 .leftColumn6 .leftContent{
+   width: 70%;
+   margin: auto;
+}
+.column6Login .innerColumn6 .leftColumn6 .leftContent .firstDiv h3{
+  color: #acabab;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 30%;
+  margin-bottom: 10%;
+}
+.column6Login .innerColumn6 .leftColumn6 .leftContent .firstDiv p{
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10%;
+}
+.column6Login .innerColumn6 .leftColumn6 .leftContent .firstDiv input{
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10%;
+  padding: 13px 45px;
+  background-color: transparent;
+  border: 1px solid rgb(206, 204, 204);
+}
+.column6Login .innerColumn6 .leftColumn6 .leftContent .firstDiv input::placeholder{
+  color: rgb(206, 204, 204);
+  border: none;
+}
+.column6Login .innerColumn6 .leftColumn6 .leftContent .firstDiv button{
+ padding: 12px 20px;
+ background: #acabab;
+ border: none;
+ font-weight: 600;
+ color: white;
+}
+.column6Login .innerColumn6 .leftColumn6 .leftContent .secondDiv .links img{
+ height: 40px;
+}
+.column6Login .innerColumn6 .leftColumn6 .leftContent .secondDiv .links{
+ width: 45%;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ margin-bottom: 10%;
+}
+.column6Login .innerColumn6 .leftColumn6 .leftContent .secondDiv p{
+    margin-bottom: 40%;
+    font-size: 15px;
+    font-weight: 600;
+    color: #d4d3d3;
+}
+.column6Login .innerColumn6 .leftColumn6 .leftContent .secondDiv h3{
+    color: #acabab;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30%;
+    margin-bottom: 8%;
+}
+.column6Login .innerColumn6 .leftColumn6 .leftContent p{
+   font-size: 15px;
+   font-weight: 600;
+   color: #d4d3d3;
+   margin-bottom: 80px;
+}
+.column6Login .innerColumn6 .leftColumn6 .leftContent .footer{
+   font-size: 15px;
+   font-weight: 600;
+   color: #d4d3d3;
+   margin-bottom: 80px;
+   text-decoration: none;
+}
+
+.column6Login .innerColumn6 .rightColumn6{
+    background-color:rgb(92, 92, 92) ;
+    width: 100%;
+}
+.column6Login .innerColumn6 .rightColumn6 .rightColumn6Content{
+    width: 70%;
+    margin: auto;
+ }
+ .column6Login .innerColumn6 .rightColumn6 .rightColumn6Content .firstDiv h3{
+    color: #acabab;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 25%;
+    margin-bottom: 10%;
+  }
+  .column6Login .innerColumn6 .rightColumn6 .rightColumn6Content .firstDiv p{
+    color: #d4d3d3;
+    font-size: 16px;
+    margin-bottom: 10%;
+    font-weight: 600;
+  }
+  .column6Login .innerColumn6 .rightColumn6 .rightColumn6Content .firstDiv h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 7%;
+  }
+  .column6Login .innerColumn6 .rightColumn6 .rightColumn6Content .secondDiv h3{
+    color: #acabab;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30%;
+    margin-bottom: 8%;
+}
+.column6Login .innerColumn6 .rightColumn6 .rightColumn6Content .secondDiv .links{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.column6Login .innerColumn6 .rightColumn6 .rightColumn6Content .secondDiv .links a{
+   text-decoration: none;
+   color: white;
+   font-weight: 500;
+   font-size: 14px;
+}
+.column6Login .innerColumn6 .rightColumn6 .rightColumn6Content .secondDiv .links ul{
+  list-style: none;
+}
+.column6Login .innerColumn6 .rightColumn6 .rightColumn6Content .secondDiv .links ul li{
+  padding-bottom: 15px;
+}
+
+.loginMain{
+    width: 100%;
+   min-height: 100vh;
+    background: #f9f9f9;
+}
+.loginMain .loginInner{
+    width: 70%;
+    margin: auto;
+    min-height: 500px;
+    background-color: #f9f9f9;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.loginMain .loginInner .leftLogin h1{
+    font-size: 4rem;
+    font-weight: 600;
+    /* width: 80%; */
+    margin: auto;
+    padding-top: 120px;
+    color: #555454;
+    margin-bottom: 60px;
+}
+.loginMain .loginInner .leftLogin .dashes{
+    width: 15%;
+    border: 1px solid black;
+    height: 10px;
+    background-color: #555454;
+    border: none;
+}
+.loginMain .loginInner .rightLogin{
+    width: 100%;
+    margin-top: 120px;
+}
+.loginMain .loginInner .rightLogin input{
+    display: block;
+    margin-bottom: 30px;
+    padding: 20px 40px;
+    width: 100%;
+    background-color: #e7e7e7;
+    border: none;
+}
+.loginMain .loginInner .rightLogin .other{
+   width: 80%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 5px;
+}
+.loginMain .loginInner .rightLogin .other a{
+   text-decoration: none;
+   color: black;
+   font-weight: 600;
+}
+.loginMain .loginInner .rightLogin .other .signIn{
+  background-color: #555454;
+  color: white;
+  padding: 18px;
+  text-align: center;
+  width: 70%;
+}
+.loginMain .loginInner .rightLogin .other .innerOther{
+  padding-top: 10px;
+}
+.loginMain .loginInner .rightLogin .other .innerOther a{
+    line-height: 20px;
+    font-size: 15px;
+}
+.loginMain .loginInner .rightLogin .other .innerOther .password{
+   color: #555454;
+}
+.loginMain .loginInner .rightLogin .other .innerOther .signUp{
+   color: #b1acac;
+}
+.loginMain .loginInner .rightLogin .other .innerOther .signUp span{
+   color: #555454;
+}
+
+
+.signUpmain{
+    width: 100%;
+   min-height: 100vh;
+    background: #f9f9f9;
+}
+.signUpmain .signUpInner{
+    width: 80%;
+    margin: auto;
+    min-height: 500px;
+    background-color: #f9f9f9;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.signUpmain .signUpInner .leftSignUp h1{
+    font-size: 4rem;
+    font-weight: 600;
+    /* width: 80%; */
+    margin: auto;
+    padding-top: 120px;
+    color: #555454;
+    margin-bottom: 60px;
+}
+.signUpmain .signUpInner .leftSignUp .dashes{
+    width: 15%;
+    border: 1px solid black;
+    height: 10px;
+    background-color: #555454;
+    border: none;
+}
+.signUpmain .signUpInner .rightSignUp{
+    width: 100%;
+    margin-top: 120px;
+}
+.signUpmain .signUpInner .rightSignUp input{
+    padding: 20px 25px;
+    width: 49%;
+    margin-bottom: 40px;
+    gap: 5px;
+    border: none;
+    background-color: #cfcfcf;
+}
+.signUpmain .signUpInner .rightSignUp .otherInput input{
+   display: block;
+   width: 100%;
+}
+.signUpmain .signUpInner .rightSignUp .other{
+   width: 80%;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-gap: 5px;
+}
+.signUpmain .signUpInner .rightSignUp .other a{
+   text-decoration: none;
+   color: black;
+   font-weight: 600;
+}
+.signUpmain .signUpInner .rightSignUp .other .signUp{
+  background-color: #555454;
+  color: white;
+  padding: 18px;
+  text-align: center;
+  width: 30%;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+.signUpmain .signUpInner .rightSignUp .other .innerOther{
+  padding-top: 10px;
+}
+.signUpmain .signUpInner .rightSignUp .other .innerOther a{
+    line-height: 20px;
+    font-size: 15px;
+}
+.signUpmain .signUpInner .rightSignUp .other .innerOther .returnToStore{
+   color: #555454;
+}
+.signUpmain .signUpInner .rightSignUp .other .innerOther .returnToStore:hover{
+   color: rgb(34, 34, 230);
+}
+.signUpmain .signUpInner .rightSignUp .other .innerOther .signUp{
+   color: #b1acac;
+}
+.signUpmain .signUpInner .rightSignUp .other .innerOther .signUp span{
+   color: #555454;
+}
